@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Assignment 3: Inputs</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <h1>Mirrored Inputs</h1>
+      <table class="table table-bordered table-condensed">
+        <thead>
+          <tr>
+            <th>Control Type</th>
+            <th>Control 1</th>
+            <th>Control 2</th>
+            <th>Value Entered</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td colspan="4" class="table-info">&lt;input&gt; types</td>
+          </tr>
+          <tr>
+            <td>checkbox</td>
+            <td><input type="checkbox" id="checkBox_1"></td>
+            <td><input type="checkbox" id="checkBox_2"></td>
+            <td id="checkBoxValue"></td>
+          </tr>
+          <tr>
+            <td>color</td>
+            <td><input type="color" id="color_1"></td>
+            <td><input type="color" id="color_2"></td>
+            <td id="colorValue"></td>
+          </tr>
+          <tr>
+            <td>date</td>
+            <td><input type="date" id="date_1"></td>
+            <td><input type="date" id="date_2"></td>
+            <td id="dateValue"></td>
+          </tr>
+          <tr>
+            <td>datetime-local</td>
+            <td><input type="datetime-local" id="dateTimeLocal_1"></td>
+            <td><input type="datetime-local" id="dateTimeLocal_2"></td>
+            <td id="dateTimeLocalValue"></td>
+          </tr>
+          <tr>
+            <td>email</td>
+            <td>
+              <form id="emailForm_1">
+                <input type="email" id="email_1" placeholder="username@example.com">
+                <button type="submit">Submit Email</button>
+              </form>
+            </td>
+            <td>
+              <form id="emailForm_2">
+                <input type="email" id="email_2" placeholder="username@example.com">
+                <button type="submit">Submit Email</button>
+              </form>
+            </td>
+            <td id="emailValue">
+            </td>
+          </tr>
+          <tr>
+            <td>month</td>
+            <td><input type="month" id="month_1"></td>
+            <td><input type="month" id="month_2"></td>
+            <td id="monthValue"></td>
+          </tr>
+          <tr>
+            <td>number</td>
+            <td><input type="number" id="number_1"></td>
+            <td><input type="number" id="number_2"></td>
+            <td id="numberValue"></td>
+          </tr>
+          <tr>
+            <td>password</td>
+            <td><input type="password" id="password_1"></td>
+            <td><input type="password" id="password_2"></td>
+            <td id="passwordValue"></td>
+          </tr>
+          <tr>
+            <td>radio</td>
+            <td>
+              <input type="radio" name="orientation_1" value="portrait" checked id="portrait_1"> Portrait &nbsp;
+              <input type="radio" name="orientation_1" value="landscape" id="landscape_1"> Landscape
+            </td>
+            <td>
+              <input type="radio" name="orientation_2" value="portrait" checked id="portrait_2"> Portrait &nbsp;
+              <input type="radio" name="orientation_2" value="landscape" id="landscape_2"> Landscape
+            </td>
+            <td id="radioValue"></td>
+          </tr>
+          <tr>
+            <td>range</td>
+            <td><input type="range" id="range_1"></td>
+            <td><input type="range" id="range_2"></td>
+            <td id="rangeValue"></td>
+          </tr>
+          <tr>
+            <td>search</td>
+            <td><input type="search" id="search_1"></td>
+            <td><input type="search" id="search_2"></td>
+            <td id="searchValue"></td>
+          </tr>
+          <tr>
+          <tr>
+            <td>tel</td>
+            <td><input type="tel" id="tel_1"></td>
+            <td><input type="tel" id="tel_2"></td>
+            <td id="telValue"></td>
+          </tr>
+          <tr>
+            <td>text</td>
+            <td><input type="text" id="text_1"></td>
+            <td><input type="text" id="text_2"></td>
+            <td id="textValue"></td>
+          </tr>
+          <tr>
+            <td>time</td>
+            <td><input type="time" id="time_1"></td>
+            <td><input type="time" id="time_2"></td>
+            <td id="timeValue"></td>
+          </tr>
+          <tr>
+            <td>url</td>
+            <td>
+              <form id="urlForm_1">
+                <input type="url" id="url_1" placeholder="http://example.com">
+                <button type="submit">Submit URL</button>
+              </form>
+            </td>
+            <td>
+              <form id="urlForm_2">
+                <input type="url" id="url_2" placeholder="http://example.com">
+                <button type="submit">Submit URL</button>
+              </form>
+            </td>
+            <td id="urlValue">
+          </tr>
+          <tr>
+            <td>week</td>
+            <td><input type="week" id="week_1"></td>
+            <td><input type="week" id="week_2"></td>
+            <td id="weekValue"></td>
+          </tr>
+          <tr>
+            <td colspan="4" class="table-info">&lt;select&gt;</td>
+          </tr>
+          <tr>
+            <td>select</td>
+            <td>
+              <select id="select_1">
+                <option value="unselected" hidden>-- Select One --</option>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+              </select>
+            </td>
+            <td>
+              <select id="select_2">
+                <option value="unselected" hidden>-- Select One --</option>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+              </select>
+            </td>
+            <td id="selectValue"></td>
+          </tr>
+          <tr>
+            <td>select (multiple)</td>
+            <td>
+              <select id="multiSelect_1" multiple>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+              </select>
+            </td>
+            <td>
+              <select id="multiSelect_2" multiple>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+              </select>
+            </td>
+            <td id="multiSelectValue"></td>
+          </tr>
+          <tr>
+            <td colspan="4" class="table-info">&lt;datalist&gt;</td>
+          </tr>
+          <tr>
+            <td>datalist</td>
+            <td>
+              <form id="dataListForm_1">
+                <input list="browsersList_1" name="mybrowser_1" id="dataListInput_1">
+                <datalist id="browsersList_1">
+                  <option value="Firefox" selected>
+                  <option value="Chrome">
+                  <option value="Opera">
+                  <option value="Safari">
+                  <option value="Internet Explorer">
+                </datalist>
+                <button type="submit">Submit Selection</button>
+              </form>
+            </td>
+            <td>
+              <form id="dataListForm_2">
+                <input list="browsersList_2" name="mybrowser_2" id="dataListInput_2">
+                <datalist id="browsersList_2">
+                  <option value="Firefox">
+                  <option value="Chrome">
+                  <option value="Opera">
+                  <option value="Safari">
+                  <option value="Internet Explorer">
+                </datalist>
+                <button type="submit">Submit Selection</button>
+              </form>
+            </td>
+            <td id="dataListValue"></td>
+          </tr>
+          <tr>
+            <td colspan="4" class="table-info">&lt;textarea&gt;</td>
+          </tr>
+          <tr>
+            <td>textarea</td>
+            <td><textarea id="textArea_1" rows="3" cols="25"></textarea></td>
+            <td><textarea id="textArea_2" rows="3" cols="25"></textarea></td>
+            <td id="textAreaValue"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>  
+  </body>
+</html>
