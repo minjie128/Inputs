@@ -1,4 +1,3 @@
-
 // Read and display the initial value for each input
 $("#checkBoxValue").text($("#checkBox_1").prop("checked"));
 $("#colorValue").text($("#color_1").val());
